@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="btn-bar">
+    <button class="btn" id="mainbtn" onclick="showpage(main)">
+      <img src="asesst/home.png">Home
+    </button>
+    
+    <button class="btn" id="taskbtn" onclick="showpage(task)">
+      <img src="asesst/task.png">Task
+    </button>
+    
+    <button class="btn" id="walletbtn" onclick="showpage(wallet)">
+      <img src="asesst/wallet.png">Wallet
+    </button>
+    
+    <a href="#" class="btn">
+      <img src="asesst/support.png">Contact
+    </a>
+  </div>
+  <div class="notifi">
+   <h3>ADS WARCHED <img src="asesst/done.gif" width="50"></h3> 
+  </div>
+  
+  <section id="main" class="page">
+    
+    <div class="user-fhoto">
+      <img src="user.jpg">
+    </div>
+    
+    <div class="user-name">
+      <span style="color: #ffeedd; font-size: 20px;">♪WellCome♫</span>
+      <span>Ma love</span>
+    </div>
+    
+    <div class="user-balance">
+      <span>0.00<img src="asesst/pepe.png" width="23" height="30"></span>
+    </div>
+    
+    <div class="box-ads">
+      <img src="asesst/113.png" width="250">
+    </div>
+    
+    <div class="ADS">
+      <button id="watch"><img src="asesst/watch.gif" width="60" height="50"></button>
+    </div>
+    
+    <div class="user-ads">
+      <h3>0</h3>
+      <h4>ADS</h4>
+    </div>
+    
+    <div class="user-refal">
+      <h3>0</h3>
+      <h4>Refal</h4>
+    </div>
+    
+    <div class="game-page">
+      <img id="gamebtn" src="asesst/game.gif" width="50" onclick="showpage(game)">
+      <h4>Game</h4>
+    </div>
+    
+    <div class="refal-page">
+   
+     <img id="refalbtn" src="asesst/refal.gif" width="60" onclick="showpage(refal)" > 
+     <h4>invite</h4>
+    </div>
+    
+  </section>
+  
+  <audio id="audio" src="sound/audio.mp3" autoplay loop></audio>
+  <audio id="clicksound" src="sound/click.mp3"></audio>
+  
+  <section id="task" class="page">
+    <span class="task-header">Telegram Task </span>
+    
+    <div class="task-card">
+      <img class="task-img" src="asesst/telegram.png" width="25">
+      <span class="task-name">Earn channel</span>
+      <span class="task-prize">500 <img src="asesst/pepe.png" width="25" height="28"></span>
+     <div class="task-link">
+       <a href="#">Join</a>
+     </div>
+    </div>
+    
+    <input type="checkbox" id="taskadd">
+    
+    <div class="addtaskbtn">
+      <label for="taskadd">ADD Task <img src="asesst/task-add.gif" width="30"></label>
+    </div>
+    
+    <button id="createtask">Create</button>
+    
+    <div class="add-container">
+      
+      <div class="task-balance">
+        <span>0<img src="asesst/star.png" width="20" height="18"></span>
+      </div>
+      
+      <div class="add-input">
+        <input type="text" id="taskname" required placeholder="Name">
+        <label for="">Task name</label>
+        
+        <input type="text" id="tasklink" required placeholder="Link">
+        <label for="">Task link</label>
+      </div>
+      
+      <a class="top-up" href="#">Top up your balance </a>
+    </div>
+    
+  </section>
+  
+  <section id="wallet" class="page">
+    <div class="withdraw">
+      <input type="text" required id="faucetmail">
+      <label for="faucetmail">FaucetPay@📧</label>
+      <img src="asesst/wallet.gif" width="40">
+      
+      <input type="number" required id="amount">
+      <label for="amount">MIN 1000 🪙</label>
+      <img src="asesst/pepe.png" width="40">
+      
+      <button id="sendwith">SEND</button>
+    </div>
+    
+    <input type="checkbox" id="withdrawhistory" />
+    <label id="showhistory" for="withdrawhistory">History</label>
+ <div class="history">
+   
+   <div class="history-card">
+  <span class="date">18/18:20</span>
+ 
+  <span class="amountrequest">500 <img src="asesst/pepe.png" width="15" ></span>
+  
+  <span class="statu">pending</span>
+  </div>
+  
+  
+   
+ </div>
+    
+  </section>
+  
+  <section id="game" class="page">
+ 
+
+  </section>
+  
+  
+  
+  <section id="refal" class="page">
+ <h2>Invite To Earn</h2> 
+    <div class="copy-link">
+      <div class="refal-link">
+        <span>https://t.me/Bot_ad_watchbot/earn?startapp=ref_7741750541</span>
+   
+      <span id="copy"><img src="asesst/copy.png" width="26"></span>
+  
+      </div>
+      <div class="note">
+      <h4>note: Each invitation gives<span>500pepe</span></h4>
+     </div>
+     
+      
+    </div>
+    <div class="icon">
+      <img src="asesst/icon.png" width="350" >
+    </div>
+    <img id="icon" src="asesst/icon.png" width="350" >
+    
+    
+  </section>
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

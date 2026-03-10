@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page{
+  display: none;
+  background: #ffeedd;
+  color: navy;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  font-family: DynaPuff;
+  background:
+radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08) 2px, transparent 2px),
+radial-gradient(circle at 70% 40%, rgba(255,255,255,0.05) 2px, transparent 2px),
+linear-gradient(180deg, #0c0f2b 0%, #1a2250 50%, #05060f 100%);
+   user-select: none;
+}
+#main{
+  display: block;
+ background:
+radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08) 2px, transparent 2px),
+radial-gradient(circle at 70% 40%, rgba(255,255,255,0.05) 2px, transparent 2px),
+linear-gradient(180deg, #0c0f2b 0%, #1a2250 50%, #05060f 100%);
+}
+.btn-bar{
+  position: fixed;
+  top: 85%;
+  left: %;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  bo-shadow: 0 3px 30px #000;
+  padding: 0px 0px;
+  border-radius: 0px;
+  ackground: #FFFFFF;
+  boder: solid black;
+ 
+  
+  
+}
+.btn-bar button,a{
+  width: 18%;
+  height: fit-content;
+  padding: 0px 0px;
+  border: none;
+  background: transparent;
+  color: navy;
+  font-family: bold;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5px;
+  text-align: center;
+  font-family: DynaPuff;
+  text-decoration: none;
+  box-shadow: 0 3px 5px #000;
+
+
+  
+ 
+ 
+}
+.btn-bar img{
+  width: 40px;
+  height: 30px;
+  transition: 0.6s;
+  position: relative;
+  left: 1px;
+ 
+}
+.btn-bar button:hover{
+  scale: 0.9;
+  transition: 0.5s;
+  background: #984040;
+  box-shadow: 0 3px 5px #80829E;
+
+ 
+  
+}
+
+.user-fhoto{
+  margin-top: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid white 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.user-fhoto img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.user-name{
+  color: gold;
+  width: 40%;
+  position: relative;
+  top: -60px;
+  left: 20%;
+ 
+  
+ 
+}
+.user-balance{
+  position: fixed;
+  top: -1%;
+  left: 61.5%;
+  width: fit-content;
+  font-family: DynaPuff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ padding: 10px 5px;
+ border-radius: 12px;
+ width: 40%;
+ text-align: center;
+ 
+}
+.user-balance img{
+  border-radius: 50%;
+}
+.user-balance span{
+  display: inline-flex;
+  font-size: 25px;
+  color: green;
+  align-items: center;
+}
+span img{
+  position: relative;
+  top: 0.5px;
+}
+.box-ads{
+  position: fixed;
+  width: 100%;
+  left: 0%;
+  top: 20%;
+  height: 68%;
+  padding: 20px;
+  bo-shadow: 0px 8px 10px black;
+  align-content: start;
+  text-align: center;
+  animation: floatBox 2s linear infinite alternate-reverse;
+  bakground: linear-gradient(180deg, #0c0f2b 0%, #1a2250 50%, #05060f 100%);
+  
+ transition: 1s;
+}
+
+@keyframes floatBox{
+  0%{ transform: translateY(0px); }
+  50%{ transform: translateY(-3px); }
+  100%{ transform: translateY(0px);}
+}
+
+
+
+.ADS{
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  width: 40%;
+ display: flex;
+ justify-content: center;
+  
+  
+}
+.ADS button{
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+  background: #5B6CFF;
+  transition: transform 0.1s ease, box-shadow 0.6s ease;
+  box-shadow: 0px 5px 2px navy;
+box-shadow:
+0 0 10px #5b6cff,
+0 0 0px #5b6cff,
+0 0 20px #5b6cff;
+linear-gradient(145deg, #2E45FF, #5C7CFF)
+  
+}
+.ADS button:hover{
+    box-shadow: 0px 0px 0px  #18181B;
+
+}
+
+
+.task-header{
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  color: #6970BC;
+  font-size: 28px;
+}
+.task-card{
+  position: relative;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3px;
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: 0.8s;
+  scale: 1;
+background:
+radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08) 2px, transparent 2px),
+radial-gradient(circle at 70% 40%, rgba(255,255,255,0.05) 2px, transparent 2px),
+linear-gradient(180deg, #0c0f2b 0%, #1a2250 50%, #05060f 100%);
+
+}
+
+.task-link{
+  margin-right: 8px;
+  background: navy;
+  border-radius: 10px;
+  height: 30px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.task-link a{
+  color: white;
+  background: transparent;
+  box-shadow: 0 0 0 #000;
+  position: relative;
+  top: -1px;
+  right: 8px;
+
+
+}
+.task-img {
+  background: navy;
+  border-radius: 50%;
+}
+.task-prize{
+  color: gold;
+  display: inline-flex;
+  margin-right: 15px;
+  font-size: 20px;
+
+}
+.task-name{
+  width: 40%;
+ color: red;
+}
+.task-card:hover{
+  translate: 0 15px;
+  transition: 0.6s;
+  scale: 1.07;
+  z-index: 999;
+}
+.addtaskbtn{
+  position: fixed
+  width: 40%;
+  left: 30%;
+  top: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.addtaskbtn label{
+  border: none;
+  background: blue;
+  color: #ffeedd;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  padding: 5px 5px;
+  font-family: DynaPuff;
+  z-index: 1000;
+  box-shadow: 0 4px 10px #000;
+  
+}
+#taskadd{
+  display: none;
+}
+.add-container{
+  width: 100%;
+  height: 00%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0%;
+  background: black;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 3px 10px #000;
+  z-index: 99; 
+  transition: 1s;
+ overflow: auto;
+ background:
+radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08) 2px, transparent 2px),
+radial-gradient(circle at 70% 40%, rgba(255,255,255,0.05) 2px, transparent 2px),
+linear-gradient(180deg, #0c0f2b 0%, #1a2250 50%, #05060f 100%);
+  
+}
+.add-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+  gap: 50px;
+  width: 90%;
+ 
+  
+  
+}
+.add-input input{
+ outline: none;
+  border: none;
+  padding: 8px 5px;
+  background: transparent;
+  border-radius: 1px;
+  border-bottom: solid white;
+  font-family: DynaPuff;
+  color: white;
+  letter-spacing: 1.6px;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-left: -60px;
+}
+.add-input label{
+  opacity: 0;
+  position: relative;
+  transition: 0.5s;
+  top: -1px;
+  left: -50px;
+  
+}
+.add-input input:focus + label,
+.add-input input:valid + label{
+  top: -140px;
+ opacity: 1;
+ font-size: 25px;
+
+}
+ 
+#taskadd:checked ~ .add-container{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  
+}
+#taskadd:checked ~ #createtask{
+  opacity: 1;
+  z-index: 999;
+  display: block;
+}
+
+ #createtask{
+  position: fixed;
+  margin-top: 90%;
+  left: 35%;
+  width: 30%;
+  padding: 10px 0;
+  background: navy;
+  border: none;
+  border-radius: 10px;
+  font-family: DynaPuff;
+  font-weight: bold;
+  color: white;
+  display: none;
+
+ 
+}
+.task-balance{
+  ox-shadow: 0 2px 10px 2.5px black;
+  height: fit-content;
+  padding: 5px 7px; 
+  border-radius: 8px;
+  width: 20%;
+  font-size: 22px;
+  color: blue;
+  display: inline-flex;
+  margin: 5px 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-up{
+  position: fixed;
+  top: 4%;
+  width: 50%;
+  text-decoration: underline;
+  color: transparent;
+  box-shadow: 0 0 0;
+
+}
+
+
+.withdraw{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  gap: 30px;
+  padding: 30px 10px;
+  margin: 10px 0;
+  position: absolute;
+  left: 2.5%;
+  ox-shadow: 0 2px 10px #000;
+  bacground: #8D90AE;
+  border-radius: 15px;
+  
+}
+.withdraw input{
+  outline: none;
+  border: none;
+  padding: 8px 5px;
+  background: transparent;
+  border-radius: 1px;
+  border-bottom: solid navy;
+  boxshadow: 0 0.3px 10px #000;
+  font-family: DynaPuff;
+  color: #46474F;
+  letter-spacing: 1.6px;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.withdraw label{
+  position: relative;
+  top: -21px;
+  display: inline-flex;
+  opacity: 0.4;
+  transition: 0.6s;
+  color: white;
+
+}
+.withdraw input:focus + label,
+.withdraw input:valid + label{
+  top: -80px;
+ opacity: 1;
+ 
+}
+input:focus{
+  border-bottom: solid red 4px;
+  width: 70%;
+  
+}
+input:valid{
+  border-bottom: solid #33A830 3px;
+}
+.withdraw button{
+  width: 40%;
+  padding: 10px 0;
+  border: none;
+  background: black;
+  color: #ffeedd;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 0 #2E2F3A;
+  transition: 0.5s;
+}
+.withdraw button:hover{
+    box-shadow: 0 -3px 5px #2A2B32;
+}
+.withdraw img{
+  position: relative;
+  left: 43%;
+  bottom: 130px;
+  background: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  box-shadow: 0 3px 10px #000;
+  
+}
+.user-ads{
+  width: 25%;
+  height: 60px;
+  position: fixed;
+  left: 70%;
+  top: 11%;
+  box-shadow: 0 3px 10px #000;
+  border-radius: 35px;
+  text-align: center;
+  align-content: center;
+  background: #9B9FC5;
+  color: darkmagenta;
+ 
+  }
+  .user-refal{
+  width: 25%;
+  height: 60px;
+  position: fixed;
+  left: 5%;
+  top: 10.5%;
+  box-shadow: 0 3px 10px #000;
+  border-radius: 35px;
+  text-align: center;
+  align-content: center;
+ background: #A2A5C8;
+ color: darkmagenta;
+  }
+ 
+ 
+.game-page{
+  position: absolute;
+  left: 81%;
+  top: 25%;
+  text-align: center;
+  color: #ffeedd;
+} 
+
+.notifi{
+  position: fixed;
+  color: white;
+  left: 15%;
+  width: 70%;
+  background: navy;
+  text-align: center;
+  padding: 20px 50px;
+  z-index: 3;
+  border-radius: 30px;
+  opacity: 0.9;
+  font-family: DynaPuff;
+  display: none;
+}
+ 
+ .refal-page{
+position: absolute;
+  left: 80%;
+  top: 45%;
+  text-align: center;
+  color: #ffeedd;   
+ }
+ 
+#refal h2{
+  color: #ffeedd;
+  margin-left: 28%;
+  margin-top: 10px;
+}
+ 
+ .icon{
+   width: 100%;
+   height: 40%;
+   position: fixed;
+   top: 40%;
+   left: 5%;
+   
+ }
+ .copy-link{
+   background: linear-gradient(90deg, #1E2A78, #2F46B3);
+   width: 80%;
+   position: absolute;
+   left: 10%;
+   height: 20%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+   border-radius: 15px;
+   margin: 30px 0;
+   z-index: 3;
+ }
+ .refal-link{
+   width: 90%;
+   color: #2C2D3C;
+   background: #ffeedd;
+   padding: 6px 4px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+   margin: 7px 4px;
+   height: 30%;
+   letter-spacing: 2px;
+   font-size: 8px;
+
+ }
+ #copy{
+  background: #2F7DE1;
+  color: white;
+  height: 145%;
+  width: 26%;
+  position: relative;
+  top: -0px;
+  left: 5px;
+  text-align: center;
+  align-content: center;
+  font-size: 20px;
+ border-radius: 0 10px 10px 0;
+ }
+ 
+ .note{
+   color: white;
+   width: 90%;
+   font-size: 15px;
+   background: #242531;
+   height: 30%;
+   text-align: center;
+   align-content: center;
+   border-radius:  15px 15px;
+   font-size: 12px;
+  
+ }
+ .note span{
+   color: gold;
+   margin-left: 7px;
+ }
+ 
+ #icon{
+   position: relative;
+   right: 40px;
+   z-index: 0;
+   
+ }
+ 
+ 
+ 
+ #withdrawhistory{
+   display: none;
+ }
+ 
+ #showhistory{
+   background: white;
+   border-radius: 30px;
+   padding: 5px 3px;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  z-index: 4;
+ }
+ 
+ .history{
+   height: 0%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: black;
+   position: absolute;  
+   top: 0;
+  overflow: auto;
+  transition: 1s;
+ }
+ .history-card{
+   width: 90%;
+   display: flex;
+
+   justify-content: space-between;
+   position: relative; 
+   top: 40px;
+   padding: 20px 5px;
+   margin-top: 10px;
+ }
+ .statu{
+   color: red;
+ }
+ .amountrequest{
+   display: inline-flex;
+   color: gold;
+ }
+ 
+ #withdrawhistory:checked ~ .history{
+   height: 100%;
+   width: 100%;
+ }
+ 
+@media (max-height: 500px){
+  .btn-bar{
+    top: 100%;
+  }
+  
+  
+  
+  
